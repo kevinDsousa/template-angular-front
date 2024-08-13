@@ -1,0 +1,101 @@
+/* COMPONENTES HTML CUSTOMIZADOS */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #eaf7eb;
+  color: var(--text-color);
+  font-family: Open Sans, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+body {
+  font-family: Open Sans, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+
+  .p-component {
+    font-family: Open Sans, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  label,
+  strong,
+  td {
+    color: var(--text-color);
+  }
+
+  span,
+  strong,
+  em {
+    word-wrap: break-word;
+  }
+}
+
+.text-danger {
+  color: var(--error-color);
+}
+
+.border-danger,
+.border-danger > input,
+.p-inputtext.invalid {
+  border-color: var(--error-color) !important;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #dee2e6;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  font-size: 14px;
+}
+
+td {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.w-full {
+  .p-dropdown {
+    width: 100%;
+  }
+  .p-inputmask {
+    width: 100%;
+  }
+  .p-calendar {
+    width: 100%;
+  }
+  .p-autocomplete {
+    width: 100%;
+    .p-autocomplete-input {
+      width: 100%;
+    }
+  }
+  .p-inputnumber {
+    width: 100%;
+  }
+  .p-multiselect {
+    width: 100%;
+  }
+  .p-password {
+    width: 100%;
+    .p-inputtext {
+      width: 100%;
+    }
+  }
+}
+
+/*------------- CLASSES CUSTOMIZADAS --------------*/
+
+.container {
+  width: 100%;
+}

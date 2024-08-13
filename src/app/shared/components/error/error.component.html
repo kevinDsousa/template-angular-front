@@ -1,0 +1,11 @@
+<div class="text-danger" *ngIf="control && control.errors && (control.dirty || control.touched)">
+  <small  *ngIf="control.errors.required"><small>Preencha este campo</small></small>
+  <small  *ngIf="control.errors.email"><small>Formato de email inválido</small></small>
+  <small  *ngIf="control.errors.min"><small>{{'Valor do campo deve ser igual ou superior a ' + control.errors.min.min}}</small></small>
+  <small  *ngIf="control.errors.cpfInvalido"><small>{{control.errors.cpfInvalido}}</small></small>
+  <small  *ngIf="control.errors.minDate"><small>{{control.errors.minDate.message}}</small></small>
+  <small  *ngIf="control.errors.maxDate"><small>{{control.errors.maxDate.message}}</small></small>
+  <small  *ngIf="control.errors.lessThanEqualTo"><small>{{control.errors.lessThanEqualTo.message}}</small></small>
+</div>
+
+
